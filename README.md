@@ -9,7 +9,7 @@ After that before all of the operations you should run docker-compose.yml and yo
 
 When you finish creating and setting this parameters. You could run the project. The aplication will be run on localhost:8081. 
 
-There are 3 entities; Portfolio, Share and User. You should create User and Share datas with api. After that you can sell and buy portfolio. I will share Postman Collection in this folder with "postman-collection" name. 
+I used Postgresql. There are 3 entities; Portfolio, Share and User. You should create User and Share datas with api. After that you can sell and buy portfolio. I will share Postman Collection in this folder with "postman-collection" name. 
 
 
 Base Url = http://localhost:8081
@@ -23,3 +23,4 @@ Base Url = http://localhost:8081
  + /trade/sell -> you can sell portfolio 
 
   
+Every user have portfolio. User table and Portfolio table relation is one to many. Portfolio join share with share_portfolio_id.  

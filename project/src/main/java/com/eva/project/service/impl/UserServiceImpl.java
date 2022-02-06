@@ -28,8 +28,8 @@ public class UserServiceImpl implements UserService {
         //Assert.notNull(kisiDto.getAdi(), "Adi alani zorunludur!");
 
         User user = new User();
-        user.setName(userDto.getAdi());
-        user.setSurname(userDto.getSoyadi());
+        user.setName(userDto.getName());
+        user.setSurname(userDto.getSurname());
         final User userDb = userRepository.save(user);
 
         List<Adres> liste = new ArrayList<>();
@@ -59,8 +59,8 @@ public class UserServiceImpl implements UserService {
         users.forEach(it -> {
             UserDto userDto =new UserDto();
             userDto.setId(it.getId());
-            userDto.setAdi(it.getName());
-            userDto.setSoyadi(it.getSurname());
+            userDto.setName(it.getName());
+            userDto.setSurname(it.getSurname());
             userDto.setPortfolios(it.getPortfolios());
             userDtos.add(userDto);
         });

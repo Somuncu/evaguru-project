@@ -16,9 +16,9 @@ public class UserDto {
     private Long id;
 
     @NotNull
-    private String adi;
+    private String name;
 
-    private String soyadi;
+    private String surname;
 
     private List<Portfolio> portfolios;
 }
