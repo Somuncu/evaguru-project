@@ -1,5 +1,4 @@
 # evaguru-project
-Project for eva.guru
 
 In the project folder there is the project that I built. 
 
